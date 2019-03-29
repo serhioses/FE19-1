@@ -1,0 +1,351 @@
+/* selector, selector {
+  key: value;
+  key: value;
+  key: value;
+  key: value;
+} */
+
+/* select all */
+/* * {
+  font-size: 40px;
+}
+.all * {
+  color: indigo;
+} */
+
+/* select by tag name */
+/* a {
+  text-transform: uppercase;
+}
+li {
+  font-weight: bold;
+} */
+
+/* select by id */
+/* #container {
+  border: 4px solid salmon;
+}
+#text {
+  text-decoration: line-through;
+} */
+
+/* select by class name */
+/* .container {
+  background-color: lightgray;
+}
+.text {
+  text-decoration: underline;
+} */
+
+/* nested selectors (0021) (0011) (0011) (0113) (0020) (0011) (0111) */
+/* .nested .nested__inner p {
+  color: darkgreen;
+}
+.nested p {
+  text-transform: uppercase;
+}
+
+.table td {
+  border: 1px solid gray;
+  padding: 12px;
+}
+.table tbody tr td #text {
+  color: greenyellow;
+}
+.table .title {
+  text-decoration: line-through;
+}
+.table span {
+  background-color: salmon;
+}
+.table #text span {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+} */
+
+/* children */
+/* .children ul {
+  list-style: square;
+}
+.children ul li {
+  font-weight: bold;
+}
+.children > ul > li > span {
+  font-size: 24px;
+}
+.children > ul > li span {
+  color: darkgray;
+} */
+
+/* next one */
+/* .next-one p + span {
+  text-decoration: line-through;
+} */
+
+/* next all */
+/* .next-all p ~ span {
+  color: orangered;
+} */
+
+/* Attribute selectors */
+/* Просто выбор по атрибуту */
+/* img[alt] {
+  border: 2px solid;
+} */
+/* Атрибут с точным значением */
+/* img[alt="Autumn-jpg"] {
+  border-color: red;
+} */
+/* Атрибут с точным значением */
+/* img[alt="Autumn-png"] {
+  border-color: green;
+} */
+/* Атрибут с поиском в конце строки */
+/* img[src$=".png"] {
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.4);
+} */
+/* Атрибут с поиском в начале строки */
+/* img[src^="https://www"] {
+  border-radius: 100%;
+} */
+/* Атрибут с поиском в любом месте строки */
+/* a[href*="htmlbook"] {
+  font-weight: bold;
+} */
+/* Data-атрибут */
+/* [data-title] {
+  color: #444;
+} */
+/* Data-атрибут со значением */
+/* [data-title="secondary"] {
+  border-left: 4px solid slategray;
+} */
+/* Attribute selectors (END) */
+
+/* Pseudoclasses (псевдоклассы) */
+/* Первый дочерний элемент */
+td:first-child {
+  text-transform: uppercase;
+}
+/* Последний дочерний элемент */
+td:last-child {
+  text-transform: uppercase;
+}
+/* Последний дочерний элемент */
+/* N-ый дочерний элемент. even - четный, odd - нечетный, n - счетчик от 0 до бесконечности */
+tr:nth-child(even) {
+  background-color: #ddd;
+}
+/* Тоже самое что и предыдущий */
+/* tr:nth-child(2n) {
+  background-color: #ddd;
+} */
+/* tr:nth-child(odd) {
+  background-color: #f9f9f9;
+} */
+/* Тоже самое что и предыдущий */
+/* tr:nth-child(2n - 1) {
+  background-color: #f9f9f9;
+} */
+/* Начиная с 6 ряда и до конца найти 3, 5, 7, 9, 11... ячейку и сделать шрифт жирным */
+/* tr:nth-child(n + 6) td:nth-child(2n + 3) {
+  font-weight: bold;
+} */
+/* Псевдокласс отрицания */
+/* li:not(.picture) {
+  list-style-type: none;
+} */
+
+/* First letter */
+/* p:first-letter {
+  color: palevioletred;
+  font-weight: bold;
+} */
+
+/* Элемент в фокусе */
+/* input:focus {
+  outline: 0;
+  border: 1px solid orange;
+} */
+/* input:active {
+  outline: 0;
+  border: 1px solid red;
+} */
+
+/* Элемент выбран (отмечен) */
+/* [type="checkbox"][name="color"]:checked + label {
+  font-weight: bold;
+}
+#red[type="checkbox"][name="color"]:checked + label {
+  color: red;
+}
+#green[type="checkbox"][name="color"]:checked + label {
+  color: green;
+}
+#blue[type="checkbox"][name="color"]:checked + label {
+  color: blue;
+} */
+
+/* Элемент активен */
+/* button:active {
+  text-transform: uppercase;
+} */
+/* Элемент в фокусе */
+/* button:focus {
+  font-weight: bold;
+} */
+
+/* Состояние ссылки по умолчанию */
+/* form a:link {
+  text-decoration: none;
+} */
+/* Аналогично */
+/* form a {
+  text-decoration: none;
+} */
+/* Состояние наведения */
+/* form a:hover {
+  text-decoration: underline;
+} */
+/* Состояние фокуса */
+/* form a:focus {
+  color: red;
+} */
+/* Активное состояние */
+/* form a:active {
+  text-transform: uppercase;
+} */
+/* Посещенная ссылка */
+/* form a:visited {
+  color: magenta;
+} */
+
+/* Pseudoclasses (псевдоклассы) (END) */
+
+/* body div.inline-styles p {
+  font-size: 20px;
+}
+.inline-styles p {
+  font-size: 14px;
+  font-size: 14px !important;
+} */
+
+
+/* Units */
+/* .units {
+  font-size: 10px;
+}
+.px {
+  font-size: 12px;
+}
+.em {
+  font-size: 2em;
+}
+.rem {
+  font-size: 2rem;
+}
+.perc {
+  font-size: 140%;
+}
+.vw {
+  font-size: 4vw;
+}
+.vh {
+  font-size: 8vh;
+}
+.vmin {
+  font-size: 4vmin;
+}
+.vmax {
+  font-size: 4vmax;
+} */
+/* Units (END) */
+
+/* Inheritance */
+/* .inheritance div {
+  border: 1px solid;
+  color: darkmagenta;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.inheritance div p {
+  border: 1px solid red;
+} */
+/* Inheritance (END) */
+
+/* Text formatting */
+/* text-decoration by default - none */
+/* .underline {
+  text-decoration: underline;
+}
+.overline {
+  text-decoration: overline;
+}
+.line-through {
+  text-decoration: line-through;
+} */
+
+/* text-transform by default - none */
+/* .uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.capitalize {
+  text-transform: capitalize;
+} */
+
+/* letter spacing */
+/* p {
+  letter-spacing: 2px;
+} */
+
+/* Text align (center, left, right) */
+/* p {
+  text-align: center;
+} */
+/* Text indent */
+/* p {
+  text-indent: 10px;
+} */
+
+/* Line height */
+/* p {
+  line-height: normal;
+} */
+/* p {
+  line-height: 2;
+} */
+/* p {
+  line-height: 140%;
+} */
+/* p {
+  font-size: 20px;
+  line-height: 2rem;
+} */
+/* p {
+  font-size: 30px;
+  line-height: 2em;
+} */
+/* p {
+  line-height: 20px;
+} */
+
+/* Text formatting (END) */
+
+/* Font */
+div.font p {
+  /* font-family: Arial; */
+  /* font-family: "Times New Roman"; */
+  /* font-family: Verdana; */
+  /* font-family: Verdana, Arial, sans-serif; */
+  /* font-family: "Times New Roman", serif; */
+  /* font-size: 20px; */
+  /* font-weight: bold; */
+  /* font-style: italic; */
+  /* font-variant: small-caps; */
+  /* font: small-caps italic bold 16px/1.43 Verdana, Arial, sans-serif; */
+}
+/* Font (END) */
+
+/* BEM */
