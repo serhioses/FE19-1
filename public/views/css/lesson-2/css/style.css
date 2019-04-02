@@ -1,0 +1,169 @@
+/* Gemeral styles */
+html {
+  font-size: 16px;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+/* Gemeral styles (END) */
+
+/* Box model */
+.box-model img {
+  border: 0;
+}
+.box {
+  margin: 24px;
+  border: 4px solid darkorchid;
+  padding: 16px;
+  background-color: #C2CE89;
+  position: relative;
+}
+.box p {
+  margin: 0;
+  background-color: #fff;
+}
+.box:before {
+  content: "";
+  border: 24px solid #F9CC9D;
+  position: absolute;
+  top: -28px;
+  right: -28px;
+  bottom: -28px;
+  left: -28px;
+}
+.stand {
+  width: 300px;
+  height: 300px;
+  background-color: #ddd;
+}
+.stand__inner {
+
+}
+.stand__item {
+  width: 60px;
+  height: 60px;
+  background-color: salmon;
+}
+/* Box model (END) */
+
+/* Flow, positioning */
+/* .rect {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+}
+.rect p {
+  margin: 0;
+}
+
+.square {
+  position: fixed;
+  top: 100px;
+  left: 200px;
+}
+.square--2 {
+  z-index: 2;
+} */
+/* Flow, positioning (END) */
+/* Positioning and z-index */
+/* .example-1 {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+  top: -80px;
+  left: 80px;
+}
+.example-1 .item {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+  position: relative;
+  top: 40px;
+  left: 40px;
+} */
+
+/* .example-2 {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+}
+.example-2 .item {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+} */
+
+/* .example-3 {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+}
+.example-3 .item {
+  width: 100%;
+  height: 80px;
+  background-color: salmon;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+} */
+
+/* .example-4 {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+}
+.example-4 .item {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+}
+.example-4 .item-1 {
+  background-color: salmon;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}
+.example-4 .item-2 {
+  background-color: olivedrab;
+  top: 80px;
+  left: 80px;
+  z-index: 1;
+}
+.example-4 .item-3 {
+  background-color: indigo;
+  top: 110px;
+  left: 110px;
+} */
+
+/* .example-5 {
+  height: 120px;
+  background-color: #ddd;
+  position: relative;
+}
+.example-5-1 {
+  z-index: 2;
+}
+.example-5-2 {
+  background-color: #888;
+  z-index: 10;
+}
+.example-5 .item {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.example-5 .item-1 {
+  background-color: salmon;
+  top: 100%;
+  z-index: 100;
+}
+.example-5 .item-2 {
+  background-color: indigo;
+} */
+/* Positioning and z-index (END) */
