@@ -1,0 +1,153 @@
+/* Gemeral styles */
+html {
+  font-size: 16px;
+}
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.wrapper {
+  padding: 24px;
+}
+
+.title {
+  margin-bottom: 30px;
+  line-height: 1.875rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.subtitle {
+  margin-bottom: 24px;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+/* Gemeral styles (END) */
+
+/* Display property */
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+/* Ignores width and height, vertical margins and paddigns, border does not affect vetical spacings */
+/* .inline {
+  display: inline;
+  margin: 20px 10px;
+  padding: 20px 10px;
+  background-color: #eee;
+}
+.inline + p span {
+  background-color: yellowgreen;
+} */
+ul {
+  /* text-align: center; */
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100px;
+  height: 100px;
+  background-color: sandybrown;
+}
+.inline-block:first-child {
+  height: 120px;
+}
+.inline-block:nth-child(2) {
+  height: 80px;
+}
+.inline-block:nth-child(4) {
+  height: 90px;
+}
+.inline-block:last-child {
+  height: 90px;
+}
+ul + p span {
+  display: inline-block;
+  background-color: yellowgreen;
+}
+
+/* table    { display: table }
+tr       { display: table-row }
+thead    { display: table-header-group }
+tbody    { display: table-row-group }
+tfoot    { display: table-footer-group }
+col      { display: table-column }
+colgroup { display: table-column-group }
+td, th   { display: table-cell }
+caption  { display: table-caption } */
+
+.table {
+  display: table;
+}
+.table__row {
+  display: table-row-group;
+}
+.table__cell {
+  display: table-cell;
+  vertical-align: bottom;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* https://htmlacademy.ru/blog/94-the-vertical-align-property */
+/* Display property (END) */
+
+/* Min/max width and height */
+/* .example-1 {
+  height: 200px;
+  height: 1px;
+  min-height: 200px;
+  background-color: #ddd;
+}
+.example-1 .item {
+  height: 100%;
+  background-color: salmon;
+} */
+
+/* .example-2 {
+  display: inline-block;
+  min-width: 400px;
+  height: 200px;
+  background-color: #ddd;
+}
+.example-2 .item {
+  width: 100%;
+  height: 100%;
+  background-color: salmon;
+} */
+
+/* .example-3 {
+  min-width: 700px;
+  width: 800px;
+  max-width: 600px;
+  height: 200px;
+  background-color: #ddd;
+}
+.example-3 .item {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+} */
+
+/* .example-4 {
+  width: 400px;
+  height: 400px;
+  max-height: 200px;
+  min-height: 600px;
+  background-color: #ddd;
+}
+.example-4 .item {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+} */
+/* Min/max width and height (END) */
