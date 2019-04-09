@@ -1,0 +1,283 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  color: #444;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.wrapper {
+  padding: 48px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+h2 {
+  margin-bottom: 24px;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+h3 {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+ul {
+  margin-bottom: 32px;
+  padding-left: 30px;
+  list-style-type: disc;
+}
+ul li {
+  margin-bottom: 12px;
+  line-height: 1.25rem;
+}
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Examples */
+/* Overflow */
+.overflow-example-1 {
+  border: 1px solid;
+  width: 200px;
+  height: 160px;
+  background-color: orange;
+  
+  /*overflow: hidden;*/
+
+  /* overflow: auto; */
+
+  /*overflow: scroll;*/
+
+
+  /*overflow-y: hidden;*/
+
+  /* overflow-x: hidden; */
+
+  /* overflow-y: visible;
+  overflow-x: auto; */
+
+  /*overflow-y: auto;
+  overflow-x: visible;*/
+
+  /* overflow-y: visible;
+  overflow-x: hidden; */
+
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+
+}
+.overflow-example-1 p {
+  width: 240px;
+}
+/* Overflow (END) */
+
+/* Float */
+.float-example-1 {
+  border: 2px solid;
+  background-color: #ddd;
+}
+.float-example-1 p {
+  margin-bottom: 16px;
+  line-height: 1.25rem;
+}
+.float-example-1 img {
+  float: left;
+}
+/* Not only picture */
+.float-example-2 {
+  border: 2px solid;
+  background-color: #ddd;
+}
+.float-example-2 p {
+  margin-bottom: 16px;
+  line-height: 1.25rem;
+}
+.float-example-2 div {
+  text-align: center;
+  float: left;
+}
+.float-example-2 img {
+  display: block;
+}
+/* Clear - Moves an element down until no floated elements left (on the left, on the right, at both sides) */
+/* Clear ignores margin-top here */
+.float-example-3 {
+  margin-top: 20px;
+  border: 2px solid;
+  background-color: #ddd;
+  clear: both;
+}
+.float-example-3 p {
+  margin-bottom: 16px;
+  line-height: 1.25rem;
+}
+.float-example-3 img {
+  float: left;
+}
+
+/* Fill the parent element */
+/* Float, clear, overflow */
+.float-example-4 {
+  border: 2px solid;
+  background-color: #ddd;
+  /*overflow: hidden;
+  overflow: auto;*/
+  /*float: left;*/
+}
+.float-example-4 p {
+  margin-bottom: 16px;
+  line-height: 1.25rem;
+}
+.float-example-4 img {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+/* clear pseudo */
+/* .clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+/* Grid */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 0 -15px;
+}
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.column {
+  width: 25%;
+  padding: 0 15px;
+  float: left;
+}
+.card {
+  margin-bottom: 30px;
+  padding-bottom: 100%;
+  background-color: #ddd;
+}
+/* Float (END) */
+
+/* Pseudo */
+.pseudo-example-1 {
+
+}
+/* can be attr() */
+.pseudo-example-1:before {
+  content: ".";
+}
+.pseudo-example-1:after {
+  content: "!";
+}
+.pseudo-example-1:before {
+  content: "(( " attr(data-extra-text) " ))";
+}
+/* Pseudo (END) */
+
+/* Background */
+/* Short - background: image position/size repeat attachment origin clip color; */
+/* Background (END) */
+.background-1 {
+  border: 4px solid #ddd;
+  width: 800px;
+  height: 400px;
+  padding: 16px;
+  background-color: salmon;
+}
+/* background-repeat: repeat|no-repeat|repeat-x|repeat-y; */
+/* background-position: keywords|px|percentage|edge; */
+/* background-attachment: scroll|fixed|local; */
+/* background-size: cover|contain|px|percentage; - regarding to element */
+/* background-clip: border-box|content-box|padding-box; Depands on repeat */
+/* background-origin: border-box|content-box|padding-box; */
+/* Images priority from the first to the last */
+.background-2 {
+  border: 4px dashed #ddd;
+  width: 800px;
+  overflow-y: auto;
+  height: 400px;
+  padding: 16px;
+  background-color: #eee;
+  background-image: url("https://static01.nyt.com/images/2016/04/25/movies/video-the-angry-birds-movie-were-gonna-fly/video-the-angry-birds-movie-were-gonna-fly-square320.jpg");
+  background-repeat: repeat, repeat;
+  /* background-position: center center, top left; */
+  /* background-attachment: local; */
+  /* background-attachment: scroll;
+  background-size: cover;
+  background-clip: content-box; */
+  /* background-origin: content-box, content-box; */
+  /* background: url("") top left no-repeat; */
+  /* -webkit-background-size: cover; */
+  /* background-size: 80% 50%; */
+  /* background-clip: padding-box; */
+  background-origin: content-box;
+}
+/* .wrapper {
+  padding: 0;
+} */
+.background-3, .background-4 {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.background-3 {
+  background-image: url("https://steemitimages.com/DQmbaEevx5FQmjCvsxo34HYVkYaCAfSj7SCUvhEH9MQShPK/121.jpg");
+}
+.background-4 {
+  background-image: url("https://image.pbs.org/video-assets/pbs/nature/241862/images/mezzanine_152.jpg");
+}
+.background-3 p {
+  padding: 24px 48px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.sprite {
+  margin-bottom: 32px;
+  padding-left: 30px;
+  font-size: 24px;
+  position: relative;
+}
+.sprite:before {
+  content: "";
+  margin-top: -11px;
+  width: 22px;
+  height: 22px;
+  background: url("http://www.trenatics.com/public/images/iconfile/sprites/css-sprite/sprite-action-black.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.sprite-1:before {
+  background-position: -346px -74px;
+}
+.sprite-2:before {
+  background-position: -244px -40px;
+}
+.sprite-3:before {
+  background-position: -74px -380px;
+}
+/* Examples (END) */

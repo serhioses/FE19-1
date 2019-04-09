@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS lesson 4</title>
+    <style>a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,td,th{text-align:left;font-weight:400;vertical-align:middle}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}button,input,optgroup,select,textarea{background:0 0;border:0;padding:0;margin:0;font:inherit;color:inherit;box-shadow:none}button{height:auto;cursor:pointer}button:focus{outline:0}button::-moz-focus-inner{outline:0;border:0;padding:0}
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>CSS lesson 4</h1>
+      <!-- <h2>
+        <a href="homework.html">Homework part 1</a>
+      </h2>
+      <h2>
+        <a href="homework2.html">Homework part 2</a>
+      </h2> -->
+      <!-- <section>
+        <h2>Overflow</h2>
+        <p>The computed values of ‘overflow-x’ and ‘overflow-y’ are the same as their specified values, except that some combinations with ‘visible’ are not possible: if one is specified as ‘visible’ and the other is ‘scroll’ or ‘auto’, then ‘visible’ is set to ‘auto’. The computed value of ‘overflow’ is equal to the computed value of ‘overflow-x’ if ‘overflow-y’ is the same; otherwise it is the pair of computed values of ‘overflow-x’ and ‘overflow-y’.</p>
+      </section> -->
+      <!-- <section>
+        <h3>Example 1</h3>
+        <div class="overflow-example-1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa quibusdam sunt quisquam nulla vitae, ut laboriosam accusamus, recusandae dicta illo minima ad sed praesentium error odit, quis sequi! Ratione sequi tempora veniam voluptatum ipsum pariatur reiciendis, quasi quam magni dolor, animi quo, doloremque impedit laboriosam consequatur! Dolor autem blanditiis eaque, quod dolores, ipsum inventore fugiat, repellat accusamus cumque aliquid consequatur!</p>
+        </div>
+      </section> -->
+      <!-- <section>
+        <h2>Float</h2>
+        <h3>Description</h3>
+        <ul>
+          <li>
+            An element stays on the same position, but float out from the document flow. It shifts to the left or to the right (depending on float value: left or right) until it touches parent borders or another floated element.
+          </li>
+          <li>
+            Not floated elements don't see a floated element so they take its place.
+          </li>
+          <li>
+            Inline elements see floated elements. They flow around them.
+          </li>
+          <li>
+            If there is no space left in horizontal direction to accommodate a floated element, it moves down until it starts to accommodate.
+          </li>
+          <li>
+            A floated element receives display: block. But there are exceptions.
+            <a href="https://www.w3.org/TR/CSS2/visuren.html#dis-pos-flo" target="_blank">W3 spec.</a>
+          </li>
+          <li>
+            Width of a floated element depends on its content.
+          </li>
+          <li>
+            There is no vertical margins conflict for floated elements.
+          </li>
+          <li>
+            Default value is none
+          </li>
+        </ul>
+      </section> -->
+      <section>
+        <!-- <h3>Example 1</h3>
+        <div class="float-example-1">
+          <img src="http://blog.webpixel.co/wp-content/uploads/Nature-Landscapes-Switzerland1-320x320.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore ipsam nostrum, reiciendis inventore recusandae possimus est eveniet harum adipisci neque totam ad ullam at explicabo nobis porro vero veritatis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat labore rem eius repellat nisi. Voluptas molestiae, tenetur, nam sit natus placeat error nihil facere optio quibusdam obcaecati, illo atque magnam?</p>
+        </div> -->
+        <!-- <h3>Example 2</h3>
+        <div class="float-example-2">
+          <div>
+            <img src="http://blog.webpixel.co/wp-content/uploads/Nature-Landscapes-Switzerland1-320x320.jpg" alt="" />
+            <span>Picture name;</span>
+            <span>Author</span>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore ipsam nostrum, reiciendis inventore recusandae possimus est eveniet harum adipisci neque totam ad ullam at explicabo nobis porro vero veritatis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat labore rem eius repellat nisi. Voluptas molestiae, tenetur, nam sit natus placeat error nihil facere optio quibusdam obcaecati, illo atque magnam?</p>
+        </div> -->
+        <!-- <h3>Example 3</h3>
+        <div class="float-example-3">
+          <img src="http://blog.webpixel.co/wp-content/uploads/Nature-Landscapes-Switzerland1-320x320.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore ipsam nostrum, reiciendis inventore recusandae possimus est eveniet harum adipisci neque totam ad ullam at explicabo nobis porro vero veritatis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat labore rem eius repellat nisi. Voluptas molestiae, tenetur, nam sit natus placeat error nihil facere optio quibusdam obcaecati, illo atque magnam?</p>
+        </div>
+        <div class="float-example-3">
+          <img src="http://blog.webpixel.co/wp-content/uploads/Nature-Landscapes-Switzerland1-320x320.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore ipsam nostrum, reiciendis inventore recusandae possimus est eveniet harum adipisci neque totam ad ullam at explicabo nobis porro vero veritatis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat labore rem eius repellat nisi. Voluptas molestiae, tenetur, nam sit natus placeat error nihil facere optio quibusdam obcaecati, illo atque magnam?</p>
+        </div> -->
+        <!-- <h3>Example 4</h3>
+        <div class="float-example-4 clearfix">
+          <img src="http://blog.webpixel.co/wp-content/uploads/Nature-Landscapes-Switzerland1-320x320.jpg" alt="" />
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore ipsam nostrum, reiciendis inventore recusandae possimus est eveniet harum adipisci neque totam ad ullam at explicabo nobis porro vero veritatis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat labore rem eius repellat nisi. Voluptas molestiae, tenetur, nam sit natus placeat error nihil facere optio quibusdam obcaecati, illo atque magnam?</p>
+          <div class="clear"></div>
+        </div> -->
+        <!-- <h3>Example 5</h3>
+        <div class="container">
+          <div class="row">
+            <div class="column">
+              <div class="card"></div>
+            </div>
+            <div class="column">
+              <div class="card"></div>
+            </div>
+            <div class="column">
+              <div class="card"></div>
+            </div>
+            <div class="column">
+              <div class="card"></div>
+            </div>
+            <div class="column">
+              <div class="card"></div>
+            </div>
+            <div class="column">
+              <div class="card"></div>
+            </div>
+          </div>
+        </div> -->
+      </section>
+      <!-- <section>
+        <h2>Pseudo elements</h2>
+        <h3>Description</h3>
+        <ul>
+          <li>
+            Pseudo elements :before (::before), :after (::after) are elements that are added to an element as the first child and the last child respectively.
+          </li>
+          <li>
+            Pseudo elements are inline by default.
+          </li>
+          <li>
+            A pseudo element must have content property. It can read content from an attribute of an element.
+          </li>
+          <li>
+            Pseudo elements can only be presented on container elements (elements with the closing tag).
+          </li>
+        </ul>
+        <p class="pseudo-example-1" data-extra-text="###">Some string</p>
+      </section> -->
+      <section>
+        <h2>Background</h2>
+        <h3>Example 1</h3>
+        <!-- <div class="background-1"></div> -->
+        <!-- <div class="background-2"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam soluta beatae voluptatum vitae optio, ullam autem adipisci ipsam mollitia eum pariatur, repellendus enim. Hic facilis perspiciatis, beatae! Inventore deleniti animi corrupti ducimus natus, consequuntur unde a minus ullam sapiente. Enim asperiores aperiam repellendus vel praesentium saepe itaque facilis officia delectus quaerat. Perspiciatis itaque optio quia, velit vel inventore ratione ipsam natus dignissimos quam soluta, ad repudiandae dolorum et neque eligendi vitae illo. Vero voluptate blanditiis ab consequuntur ut modi accusantium sapiente aut voluptates. Tempora deleniti, iste suscipit. Maxime ipsum atque natus rerum doloremque dolores illum impedit odio laboriosam harum deleniti perferendis soluta illo at consequuntur, voluptas nesciunt ducimus veniam sapiente amet maiores reprehenderit aspernatur, fugiat officia. Sed, molestias. Molestiae, sapiente illo tenetur architecto consequatur doloribus iste atque doloremque autem, iusto obcaecati asperiores ut nobis cupiditate ducimus minus quis, ipsa quasi. Animi accusantium deserunt obcaecati quam iure at quaerat assumenda amet, labore molestias? Ipsam, qui magni. Quia, aspernatur quidem! Dolor deserunt porro sapiente dolore natus animi commodi nihil, expedita at eius amet et quibusdam maxime ad voluptate! Magnam, quos veniam impedit eius maiores corporis consectetur nihil optio, mollitia enim rem sequi aliquam unde tenetur! Possimus necessitatibus maxime quod, ad autem perspiciatis esse ipsum animi nihil odit ipsam architecto amet nostrum eveniet placeat modi quae accusamus, vero odio, dolorem quas! Odit necessitatibus vero libero provident at autem incidunt iste ratione magnam, amet cupiditate. Quibusdam architecto quisquam laboriosam dignissimos recusandae hic, harum sit quas ipsa perferendis laudantium doloribus explicabo ea excepturi praesentium incidunt iure! Rerum harum alias aperiam, qui et, modi commodi in necessitatibus, voluptatum cupiditate voluptas sit ullam laborum autem nam? Doloremque sequi dolorem tenetur? Fuga harum asperiores, totam excepturi voluptatum deleniti odio libero quam praesentium assumenda ullam non reiciendis placeat suscipit hic vitae. Odio laudantium iure doloremque magnam quidem harum quo, esse nihil ab vitae aperiam, nostrum, veniam sunt ad minus asperiores ipsum numquam eligendi dicta accusamus sit? Neque facere rerum earum non? Aliquid recusandae iure dicta, unde commodi qui ex dolor vitae incidunt maxime perferendis. Quis, provident incidunt. Minima similique hic ad blanditiis earum cupiditate sunt illum corporis nulla sint deserunt, provident voluptatibus, veritatis eveniet, ipsum, modi illo! Distinctio, eius nam accusamus quam, voluptatum nisi, illo suscipit ipsa et error quis quo magnam, laboriosam sint. Harum suscipit impedit, quibusdam animi sit omnis expedita placeat ad vero, fuga optio quis eos fugit. Vitae pariatur amet architecto culpa accusantium sequi velit illo incidunt veritatis nobis, repudiandae consectetur excepturi dolore, quisquam eveniet, inventore dignissimos quibusdam repellat reprehenderit nesciunt quaerat delectus soluta rem! Totam numquam provident esse eius, enim porro eos aliquam eveniet dolores, molestiae deserunt quis soluta voluptatem suscipit, delectus eligendi iure tempore. Expedita eveniet impedit asperiores ipsa temporibus suscipit recusandae similique dignissimos, ea maxime, ducimus ipsam quasi excepturi laboriosam quibusdam id iste incidunt perspiciatis dolorum sunt alias. Iusto, esse? Error impedit id unde temporibus at nobis veritatis inventore nihil quisquam delectus dolores porro rem sit, quae nisi iste aliquid voluptates et veniam dolorem velit accusantium consequatur, minima. Tempore, id repellat omnis, modi recusandae quae in enim tempora nisi ipsum alias itaque eligendi autem. Neque nemo dolores quibusdam eveniet cum maiores maxime quod quidem molestiae, sed odio deleniti enim voluptatum doloremque, consequatur alias vel blanditiis voluptate recusandae consectetur beatae perspiciatis. Cumque incidunt fugiat expedita sequi, tempore eveniet quod praesentium suscipit, architecto mollitia beatae neque molestiae omnis quis magni nobis aliquid unde! Fuga minima dignissimos, perspiciatis ut blanditiis similique rerum nihil, et facilis, totam eum atque minus veniam sapiente, quod laboriosam consequatur iste doloribus vero? Error amet fugiat, laborum pariatur veniam porro nesciunt. Aut eum eveniet officiis ab commodi dolorem voluptatum sequi atque dolor.
+        </p> -->
+        <!-- <div class="background-3">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, aperiam.</p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam soluta beatae voluptatum vitae optio, ullam autem adipisci ipsam mollitia eum pariatur, repellendus enim. Hic facilis perspiciatis, beatae! Inventore deleniti animi corrupti ducimus natus, consequuntur unde a minus ullam sapiente. Enim asperiores aperiam repellendus vel praesentium saepe itaque facilis officia delectus quaerat. Perspiciatis itaque optio quia, velit vel inventore ratione ipsam natus dignissimos quam soluta, ad repudiandae dolorum et neque eligendi vitae illo. Vero voluptate blanditiis ab consequuntur ut modi accusantium sapiente aut voluptates. Tempora deleniti, iste suscipit. Maxime ipsum atque natus rerum doloremque dolores illum impedit odio laboriosam harum deleniti perferendis soluta illo at consequuntur, voluptas nesciunt ducimus veniam sapiente amet maiores reprehenderit aspernatur, fugiat officia. Sed, molestias. Molestiae, sapiente illo tenetur architecto consequatur doloribus iste atque doloremque autem, iusto obcaecati asperiores ut nobis cupiditate ducimus minus quis, ipsa quasi. Animi accusantium deserunt obcaecati quam iure at quaerat assumenda amet, labore molestias? Ipsam, qui magni. Quia, aspernatur quidem! Dolor deserunt porro sapiente dolore natus animi commodi nihil, expedita at eius amet et quibusdam maxime ad voluptate! Magnam, quos veniam impedit eius maiores corporis consectetur nihil optio, mollitia enim rem sequi aliquam unde tenetur! Possimus necessitatibus maxime quod, ad autem perspiciatis esse ipsum animi nihil odit ipsam architecto amet nostrum eveniet placeat modi quae accusamus, vero odio, dolorem quas! Odit necessitatibus vero libero provident at autem incidunt iste ratione magnam, amet cupiditate. Quibusdam architecto quisquam laboriosam dignissimos recusandae hic, harum sit quas ipsa perferendis laudantium doloribus explicabo ea excepturi praesentium incidunt iure! Rerum harum alias aperiam, qui et, modi commodi in necessitatibus, voluptatum cupiditate voluptas sit ullam laborum autem nam? Doloremque sequi dolorem tenetur? Fuga harum asperiores, totam excepturi voluptatum deleniti odio libero quam praesentium assumenda ullam non reiciendis placeat suscipit hic vitae. Odio laudantium iure doloremque magnam quidem harum quo, esse nihil ab vitae aperiam, nostrum, veniam sunt ad minus asperiores ipsum numquam eligendi dicta accusamus sit? Neque facere rerum earum non? Aliquid recusandae iure dicta, unde commodi qui ex dolor vitae incidunt maxime perferendis. Quis, provident incidunt. Minima similique hic ad blanditiis earum cupiditate sunt illum corporis nulla sint deserunt, provident voluptatibus, veritatis eveniet, ipsum, modi illo! Distinctio, eius nam accusamus quam, voluptatum nisi, illo suscipit ipsa et error quis quo magnam, laboriosam sint. Harum suscipit impedit, quibusdam animi sit omnis expedita placeat ad vero, fuga optio quis eos fugit. Vitae pariatur amet architecto culpa accusantium sequi velit illo incidunt veritatis nobis, repudiandae consectetur excepturi dolore, quisquam eveniet, inventore dignissimos quibusdam repellat reprehenderit nesciunt quaerat delectus soluta rem! Totam numquam provident esse eius, enim porro eos aliquam eveniet dolores, molestiae deserunt quis soluta voluptatem suscipit, delectus eligendi iure tempore. Expedita eveniet impedit asperiores ipsa temporibus suscipit recusandae similique dignissimos, ea maxime, ducimus ipsam quasi excepturi laboriosam quibusdam id iste incidunt perspiciatis dolorum sunt alias. Iusto, esse? Error impedit id unde temporibus at nobis veritatis inventore nihil quisquam delectus dolores porro rem sit, quae nisi iste aliquid voluptates et veniam dolorem velit accusantium consequatur, minima. Tempore, id repellat omnis, modi recusandae quae in enim tempora nisi ipsum alias itaque eligendi autem. Neque nemo dolores quibusdam eveniet cum maiores maxime quod quidem molestiae, sed odio deleniti enim voluptatum doloremque, consequatur alias vel blanditiis voluptate recusandae consectetur beatae perspiciatis. Cumque incidunt fugiat expedita sequi, tempore eveniet quod praesentium suscipit, architecto mollitia beatae neque molestiae omnis quis magni nobis aliquid unde! Fuga minima dignissimos, perspiciatis ut blanditiis similique rerum nihil, et facilis, totam eum atque minus veniam sapiente, quod laboriosam consequatur iste doloribus vero? Error amet fugiat, laborum pariatur veniam porro nesciunt. Aut eum eveniet officiis ab commodi dolorem voluptatum sequi atque dolor.
+        </p> -->
+        <!-- <div class="background-4"></div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda eveniet architecto quisquam animi accusantium, harum numquam quis velit odit, quam nulla magni dignissimos iusto! Voluptatum rem, omnis molestiae ipsam aliquid consequatur iste fugiat, maiores a minus. Ad delectus nihil asperiores reprehenderit neque ullam itaque nisi, nostrum cum? Doloremque aspernatur consequuntur nesciunt itaque libero quasi ad impedit officia animi, voluptatem doloribus dolorum neque, laborum hic eaque, voluptatum harum cum nisi expedita. Reiciendis distinctio labore, sed molestiae quasi, et explicabo. Dolores accusamus aut sint, et mollitia fuga suscipit temporibus soluta ratione voluptatem animi quo distinctio voluptatum? Suscipit nam tenetur non ab fugit ipsum delectus at quos corrupti modi beatae hic dolores, blanditiis consectetur cum incidunt earum deleniti est fugiat! Expedita aliquid repellendus deserunt voluptatum, illum ullam consectetur? Itaque dolorem libero vitae quaerat necessitatibus eveniet doloribus saepe iure. Magni beatae explicabo libero error necessitatibus rerum saepe quae vitae, quis enim deleniti vel. Dolorum deserunt et, cumque laboriosam eum, quos sint ex enim facere in, impedit commodi mollitia, esse ipsam autem sequi labore dolorem repellendus culpa nostrum! Quisquam distinctio voluptates enim voluptatem dolorum. Quo amet quam impedit odio, praesentium repellendus hic quibusdam tempora ipsam. Aut temporibus quod dicta deserunt illo ipsum, neque aliquid ipsa.
+        </p> -->
+        <!-- <h3>Example 2</h3>
+        <div class="sprite sprite-1">Telephone</div>
+        <div class="sprite sprite-2">Favorite</div>
+        <div class="sprite sprite-3">Like</div> -->
+      </section>
+    </div>
+  </body>
+</html>
