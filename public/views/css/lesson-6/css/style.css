@@ -1,0 +1,335 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+/* Font face */
+/* https://css-tricks.com/snippets/css/using-font-face/ */
+/* https://www.fontsquirrel.com/tools/webfont-generator */
+/* https://fonts.google.com/ */
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Rokkit Thin"), local("Rokkit-Thin"), url("rokkitt-thin-webfont.eot");
+  src: local("Rokkit Thin"), local("Rokkit-Thin"),
+    url("../fonts/rokkitt-thin-webfont.eot?iefix") format("embedded-opentype"),
+    /* url("../fonts/rokkitt-thin-webfont.ttf") format("truetype"), */
+    url("../fonts/rokkitt-thin-webfont.woff2") format("woff2"),
+    url("../fonts/rokkitt-thin-webfont.woff") format("woff"),
+    url("../fonts/Rokkitt-Thin.ttf") format("truetype"),
+    url("../fonts/rokkitt-thin-webfont.svg#rokkittthin") format("svg");
+}
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Rokkit Regular"), local("Rokkit-Regular"), url("../fonts/Rokkitt-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Rokkit Bold"), local("Rokkit-Bold"), url("../fonts/Rokkitt-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Rokkitt";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Rokkit Black"), local("Rokkit-Black"), url("../fonts/Rokkitt-Black.ttf") format("truetype");
+}
+/* Font face (END) */
+
+html {
+  font-size: 16px;
+}
+body {
+  color: #444;
+  font-family: Rokkitt, Arial, sans-serif;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.wrapper {
+  padding: 48px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+h2 {
+  margin-bottom: 24px;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+h3 {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Font */
+p {
+  margin: 1rem 0;
+  line-height: normal;
+}
+.thin {
+  font-weight: 100;
+}
+.regular {
+  font-weight: 400;
+}
+.bold {
+  font-weight: 700;
+}
+.black {
+  font-weight: 900;
+}
+/* Font (END) */
+
+/* Border radius */
+.border-radius {
+  /* border-radius: 8px; */
+  border-radius: 50%;
+  /* border-radius: 20px 10px; */
+  /* border-radius: 20px 10px 50px; */
+  /* border-radius: 10px 20px 30px 40px; */
+  /* border-top-right-radius: 20px 40px; */
+  /* border-radius: 75px; */
+  /* x / y */
+  /* border-radius: 10px / 50px; */
+  /* top-left+bottom-right / y */
+  /* border-radius: 10px 40px / 50px; */
+  /* border-radius: 10px 40px / 50px; */
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+}
+/* Border radius (END) */
+
+/* Linear gradient */
+/* to top, to left, to bottom, to right, to top left, to top right, to bottom left, to bottom right */
+/* degrees */
+.linear-gradient {
+  width: 600px;
+  height: 200px;
+  /* background-image: linear-gradient(to bottom right, salmon, paleturquoise); */
+  /* background-image: linear-gradient(45deg, black, white); */
+  /* background-image: linear-gradient(to top, greenyellow, navy 25%, coral); */
+  /* background-image: linear-gradient(to top, greenyellow, navy 100px, coral); */
+  /* background-image: linear-gradient(to left, palegoldenrod 40px, navy 300px, coral 360px); */
+  /* background-image: linear-gradient(to left, #444 50%, #888 50%); */
+  /* background-image: linear-gradient(135deg, #ddd 50%, #eee 50%); */
+  background-image: linear-gradient(135deg, #aaa 33.3333%, #eee 33.3333%, #eee 66.6666%, #ddd 66.666%, #ddd 100%);
+}
+
+/* .button {
+  display: inline-block;
+  vertical-align: top;
+  outline: 0;
+  border: 0;
+  border-radius: 3px;
+  min-width: 64px;
+  height: 40px;
+  padding: 0 16px;
+  color: #fff;
+  background-color: #F44336;
+  background-image: linear-gradient(127deg, #C62828 24%, rgba(255,255,255,0) 25%), linear-gradient(-137deg, #C62828 20%, rgba(255,255,255,0) 21%);
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #9C27B0;
+  background-image: linear-gradient(127deg, #6A1B9A 24%, rgba(255,255,255,0) 25%), linear-gradient(-137deg, #6A1B9A 20%, rgba(255,255,255,0) 21%);
+} */
+/* Linear gradient (END) */
+
+/* Radial gradient */
+/* ellips, circle */
+/* at top, at left, at bottom, at right, at top left, at top right, at bottom left, at bottom right */
+/* closest-side, farthest-side, closest-corner, farthest-corner, length, length or percentage */
+.radial-gradients {
+  padding: 0;
+  list-style-type: none;
+  font-size: 0;
+  text-align: center;
+}
+.radial-gradients li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  width: 30%;
+  height: 160px;
+  background-color: #ddd;
+}
+.g1 {
+  background-image: radial-gradient(magenta, turquoise, black);
+}
+.g2 {
+  background-image: radial-gradient(circle, magenta, turquoise, black);
+}
+.g3 {
+  background-image: radial-gradient(circle at top right, magenta, turquoise, black);
+}
+.g4 {
+  background-image: radial-gradient(circle at 0px 160px, magenta, turquoise, black);
+}
+.g5 {
+  background-image: radial-gradient(100px 140px at 200px 50px, magenta, turquoise, black);
+}
+.g6 {
+  background-image: radial-gradient(circle closest-side, magenta, turquoise, black);
+}
+.g7 {
+  background-image: radial-gradient(circle closest-corner at 20% 20%, magenta, turquoise, black);
+}
+.g8 {
+  background-image: radial-gradient(circle farthest-side at bottom, magenta, turquoise, black);
+}
+.g9 {
+  background-image: radial-gradient(circle farthest-corner at bottom left, magenta, turquoise, black);
+}
+/* Touches every edge */
+.g10 {
+  background-image: radial-gradient(closest-side at 50px 50%, magenta, turquoise, black);
+}
+.g11 {
+  background-image: radial-gradient(closest-corner at 50px 50%, magenta, turquoise, black);
+}
+.g12 {
+  background-image: radial-gradient(farthest-side at 50px 50%, magenta, turquoise, black);
+}
+.g13 {
+  background-image: radial-gradient(farthest-corner at 50px 50%, magenta, turquoise, black);
+}
+/* Radial gradient (END) */
+
+/* Box shadow */
+.box-shadow {
+  width: 200px;
+  height: 120px;
+  background-color: #f9f9f9;
+  line-height: 120px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  /* box-shadow: 2px 4px 6px rgba(0,0,0,0.25); */
+  /* box-shadow: 2px 4px 6px rgba(0,0,0,0.25) inset; */
+  /* box-shadow: 2px 4px 6px rgba(0,0,0,0.25), -2px -4px 6px rgba(0,0,0,0.25); */
+  /* box-shadow: 0px 8px 4px -4px rgba(0,0,0,.25); */
+}
+.chessboard {
+  width: 240px;
+  height: 240px;
+  background-color: #f5be6c;
+  position: relative;
+  box-shadow: 0px 0px 8px rgba(138,27,10,0.6);
+}
+.chessboard:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-shadow: 30px 0 0 #8a390a,
+    90px 0 0 #8a390a,
+    150px 0 0 #8a390a,
+    210px 0 0 #8a390a,
+    0 30px 0 #8a390a,
+    60px 30px 0 #8a390a,
+    120px 30px 0 #8a390a,
+    180px 30px 0 #8a390a,
+    30px 60px 0 #8a390a,
+    90px 60px 0 #8a390a,
+    150px 60px 0 #8a390a,
+    210px 60px 0 #8a390a,
+    0 90px 0 #8a390a,
+    60px 90px 0 #8a390a,
+    120px 90px 0 #8a390a,
+    180px 90px 0 #8a390a,
+    30px 120px 0 #8a390a,
+    90px 120px 0 #8a390a,
+    150px 120px 0 #8a390a,
+    210px 120px 0 #8a390a,
+    0 150px 0 #8a390a,
+    60px 150px 0 #8a390a,
+    120px 150px 0 #8a390a,
+    180px 150px 0 #8a390a,
+    30px 180px 0 #8a390a,
+    90px 180px 0 #8a390a,
+    150px 180px 0 #8a390a,
+    210px 180px 0 #8a390a,
+    0 210px 0 #8a390a,
+    60px 210px 0 #8a390a,
+    120px 210px 0 #8a390a,
+    180px 210px 0 #8a390a;
+}
+.circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to bottom right, #ddd 50%, #eee 50%);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  position: relative;
+  animation: spin 5s linear infinite;
+}
+.circle:before {
+  content: "";
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -40px;
+  left: 80px;
+  box-shadow: 0 40px 0 rgba(244,67,55,0.6),
+    0 200px 0 rgba(233,30,99,0.6),
+    80px 120px 0 rgba(156,39,176,0.6),
+    -80px 120px 0 rgba(103,58,183,0.6),
+    0px 120px 0 #FFC107;
+  animation: circles 3s ease-in-out infinite;
+}
+
+@keyframes circles {
+  0% {
+    box-shadow: 0 40px 0 rgba(244,67,55,0.6),
+      0 200px 0 rgba(233,30,99,0.6),
+      80px 120px 0 rgba(156,39,176,0.6),
+      -80px 120px 0 rgba(103,58,183,0.6),
+      0px 120px 0 #FFC107;
+  }
+  50% {
+    box-shadow: 0 120px 0 rgba(244,67,55,0.6),
+      0 120px 0 rgba(233,30,99,0.6),
+      0 120px 0 rgba(156,39,176,0.6),
+      0 120px 0 rgba(103,58,183,0.6),
+      0 120px 0 #FFE082;
+  }
+  100% {
+    box-shadow: 0 40px 0 rgba(244,67,55,0.6),
+      0 200px 0 rgba(233,30,99,0.6),
+      80px 120px 0 rgba(156,39,176,0.6),
+      -80px 120px 0 rgba(103,58,183,0.6),
+      0px 120px 0 #FFC107;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotateZ(0);
+  }
+  /* 50% {
+    transform: rotateZ(360deg);
+  } */
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/* Box shadow (END) */
