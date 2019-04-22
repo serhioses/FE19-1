@@ -1,0 +1,307 @@
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  color: #444;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.wrapper {
+  padding: 48px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+h2 {
+  margin-bottom: 24px;
+  font-size: 1.625rem;
+  font-weight: bold;
+}
+h3 {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* Repeating linear gradient */
+.repeating-linear-gradient {
+  height: 320px;
+  /* background-color: #ddd; */
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 6px,
+    rgba(120, 10, 120, 0.1) 6px, rgba(120, 10, 120, 0.1) 12px
+  ),
+  repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 6px,
+    rgba(120, 10, 120, 0.1) 6px, rgba(120, 10, 120, 0.1) 12px
+  ),
+  linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 10%,
+    rgba(232, 216, 24, 0.2) 10%,
+    rgba(232, 216, 24, 0.2) 15%,
+    rgba(255, 255, 255, 0) 15%
+  ),
+  linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0) 10%,
+    rgba(232, 216, 24, 0.2) 10%,
+    rgba(232, 216, 24, 0.2) 15%,
+    rgba(255, 255, 255, 0) 15%
+  );
+}
+.progress {
+  border-radius: 3px;
+  height: 40px;
+  overflow: hidden;
+  background-color: #ddd;
+}
+.progress__bar {
+  border-radius: 3px;
+  width: 60%;
+  height: 100%;
+  background-color: #6f28da;
+  /* background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 10px,
+    #a878f1 10px, #a878f1 20px
+  ); */
+  background-position: 0 0;
+  /* background-size: 56px 40px; */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3) 25%,
+    rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%,
+    rgba(255, 255, 255, 0) 75%, rgba(255, 255, 255, 0) 100%
+  );
+  background-position: 0 0;
+  background-size: 40px 40px;
+  /* animation: 2s progress-bar linear infinite; */
+  /* position: relative; */
+  position: relative;
+}
+
+@keyframes progress-bar {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+    /* background-position: 56px 0; */
+  }
+}
+/* Repeating linear gradient */
+
+/* Repeating radial gradient */
+.repeating-radial-gradient {
+  /* width: 400px;
+  height: 400px; */
+  width: 200px;
+  height: 200px;
+  /* 200 - 10 = 190; 10 - 180 = -170 */
+  /* red -170px blue -130px white 10px */
+  /* background-image: repeating-linear-gradient(red 10px, blue 50px, white); */
+  /* background-image: repeating-radial-gradient(red 10px, blue 50px, white); */
+  /* background-image: repeating-radial-gradient(circle at bottom, salmon, rebeccapurple 40px); */
+  /* background-image: repeating-radial-gradient(salmon, salmon 10px, greenyellow 10px, greenyellow 20px, skyblue 20px, skyblue 30px);
+  background-size: 50px 50px; */
+  /* background-repeat: no-repeat; */
+  /* salmon -50px black -25px white 25px */
+  background-image: repeating-radial-gradient(circle closest-side, salmon 25%, black 50%, white);
+  /* background-image: repeating-radial-gradient(circle closest-corner, salmon 25px, black 50px, white); */
+  /* background-image: repeating-linear-gradient(salmon 25px, black 50px, white); */
+}
+/* Repeating radial gradient (END) */
+
+/* Transition */
+.transition {
+  border: 6px solid #57ad09;
+  width: 400px;
+  height: 200px;
+  background-color: #f90;
+  color: #fff;
+  line-height: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  /* transition: all 0.3s ease-in-out; */
+  /* transition: all 4s steps(4, end); */
+}
+.transition:hover {
+  border-color: #f90;
+  border-radius: 3px;
+  width: 100%;
+  background-color: #57ad09;
+  font-size: 2.4rem;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+/* Transition (END) */
+
+/* Transform 2d */
+/* none, matrix, translate(X, Y), scale(X, Y), rotate, skew(X, Y) */
+/* matrix(a,c,b,d,x,y) */
+/* a - horizontal scale */
+/* b - horizontal skew */
+/* c - vertical skew */
+/* d - vertical scale */
+/* x - horizontal translate in px */
+/* y - vertical translate in px */
+.transform {
+  width: 400px;
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+}
+.transform__item {
+  width: 200px;
+  height: 200px;
+  background-color: #5794ae;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%) scale(1.1, 1.1) rotate(0deg) skew(10deg, 10deg); */
+  /* transform: matrix(1, 0, 1, 1, -100, -100); */
+  /* transform: matrix(0.707, -0.707, 0.707, 0.707, -100, -100); */
+  /* transform: translate(-50%, -50%) rotateZ(0) skew(0, 10deg); */
+  /* transform-origin: bottom left; */
+}
+/* Transform 2d (END) */
+
+/* Transform 3d */
+/* perspective */
+/* perspective-origin */
+/* transform-style */
+/* backface-visibility */
+/* https://academo.org/demos/3d-vector-plotter/ */
+.transform3d {
+  width: 400px;
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+  perspective: 1000px;
+  /* transform-style: preserve-3d; */
+  /* perspective-origin: bottom left; */
+
+}
+.transform3d__item {
+  width: 200px;
+  height: 200px;
+  background-color: #5794ae;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* transform-style: preserve-3d; */
+  /* backface-visibility: hidden; */
+  transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1) rotate3d(0, 1, 0, 45deg);
+}
+/* Transform 3d (END) */
+
+/* 3d cube */
+.viewport {
+  height: 400px;
+  background-color: #ddd;
+  position: relative;
+  perspective: 2000px;
+  /* transform-style: preserve-3d; */
+}
+.cube {
+  width: 400px;
+  height: 400px;
+  /* background-color: #eee; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50% -200px;
+  transform: translate3d(-50%, -50%, 0) rotate3d(1, 1, 1, 50deg);
+  transform-style: preserve-3d;
+  /* animation: rotation 5s linear infinite; */
+}
+.cube__side {
+  display: none;
+  border: 4px solid white;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: repeating-radial-gradient(circle, rgba(255,255,255,0.25), rgba(255,255,255,0.25) 10px, rgba(0,0,0,0) 10px, rgba(0,0,0,0) 20px);
+  -webkit-background-size: 20px;
+  background-size: 20px;
+  color: #fff;
+  line-height: 400px;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 50% -200px;
+}
+.cube__side--front {
+  display: block;
+  /* transform: translateZ(200px); */
+}
+.cube__side--back {
+  display: block;
+  transform: rotateY(180deg);
+  /* transform: translateZ(-200px) rotateY(-180deg); */
+}
+.cube__side--right {
+  display: block;
+  transform: rotateY(90deg);
+  /* transform: rotateY(90deg) translateX(200px); */
+  /* transform-origin: top right; */
+}
+.cube__side--left {
+  display: block;
+  transform: rotateY(-90deg);
+  /* transform: rotateY(-90deg) translateX(-200px); */
+  /* transform-origin: center left; */
+}
+.cube__side--top {
+  display: block;
+  transform: rotateX(90deg);
+  /* transform: rotateX(-270deg) translateY(-200px); */
+  /* transform-origin: top center; */
+}
+.cube__side--bottom {
+  display: block;
+  transform: rotateX(-90deg);
+  /* transform: rotateX(270deg) translateY(200px); */
+  /* transform-origin: bottom center; */
+}
+
+@keyframes rotation {
+  from {
+    transform: translate3d(-50%, -50%, 0) rotate3d(1, 1, 1, 15deg);
+  }
+  to {
+    transform: translate3d(-50%, -50%, 0) rotate3d(1, 1, 1, 375deg);
+  }
+}
+/* 3d cube (END) */
